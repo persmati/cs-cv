@@ -1,0 +1,11 @@
+
+fastapi==0.115.0
+fastapi-cli==0.0.5
+opencv-contrib-python==4.10.0.84
+opencv-python==4.7.0.72
+pillow==10.4.0
+pytesseract==0.3.13
+pip==24.2
+requests==2.32.2
+wheel==0.43.0
+zipp==3.19.2
