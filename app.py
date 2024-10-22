@@ -40,8 +40,7 @@ buffer_lock = threading.Lock()
 process_thread = None
 
 MIN_BUFFER_SIZE = 30
-current_buffer_size = MIN_BUFFER_SIZE
-frame_buffer = deque(maxlen=current_buffer_size)
+frame_buffer = deque(maxlen=MIN_BUFFER_SIZE)
 
 def load_model(path, model):
     model.load_state_dict(torch.load(path, map_location=device))
@@ -353,7 +352,7 @@ def generate_frames():
                 continue
             frame = frame_buffer[0]  # Get the oldest frame
 
-        # Apply some simple image processing for smoother appearance
+        # image processing for smoother appearance
         frame = cv2.GaussianBlur(frame, (3, 3), 0)
         frame = cv2.addWeighted(frame, 1.2, frame, 0, 0)  # Increase contrast slightly
 
