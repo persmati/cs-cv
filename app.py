@@ -176,7 +176,7 @@ def calculate_odds(weapons, hp_values, timer_label, is_team0_ct):
         return round(team0_odds, 2)
 
 def weapon_power(weapon):
-    # Assign power values to weapons. Adjust these values based on your game's balance.
+    # weapons power
     power_dict = {
         'ak': 95, 'awp': 100, 'dgl': 50, 'dual': 30, 'five_seven': 45,
         'galil': 80, 'glock': 15, 'm4-s': 90, 'm4a4': 90, 'mac': 60,
