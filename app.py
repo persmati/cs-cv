@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 from MyCNN import ImprovedCNN
 from itertools import zip_longest
 import pytesseract
-pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract/'
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 import cv2
 import threading
 import time
